@@ -6,7 +6,7 @@ import './logo-bar.css';
 export function LogoBar(props) {
     return (
         <div className="logo-bar">
-            This is the logo bar
+            So, do you know car logos?
         </div>
     );
 }
