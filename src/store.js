@@ -1,15 +1,8 @@
-import {createStore, applyMiddleware, combineReducers} from 'redux';
-import lawmakers from './reducers/lawmaker-search-reducer';
-import {setAuthToken, refreshAuthToken} from './actions/auth';
+import {createStore, combineReducers} from 'redux';
+import questionsReducer from './reducers/questions-reducer';
 
 const store = createStore(
-    combineReducers({
-        form: formReducer,
-        auth: authReducer,
-        protectedData: protectedDataReducer,
-        lawmakers
-    }),
+    questionsReducer       //ES6 equivalent to questionsReducer: questionsReducer
 );
 
 export default store;
- 
